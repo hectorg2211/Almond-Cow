@@ -1,6 +1,11 @@
-const React = require('react')
-const Layout = require('@components/Layout').default
+import * as React from 'react'
+import Layout from '@components/Layout'
+import { StoreProvider } from './src/context/store-context'
 
-exports.wrapPageElement = ({ element, props }) => {
-  return <Layout {...props}>{element}</Layout>
+export const wrapPageElement = ({ element, props }) => {
+  return (
+    <StoreProvider>
+      <Layout {...props}>{element}</Layout>
+    </StoreProvider>
+  )
 }
