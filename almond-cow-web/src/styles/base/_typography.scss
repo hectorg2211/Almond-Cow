@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'lora';
+  src: url('assets/fonts/Lora/Lora.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'lora-Italic';
+  src: url('assets/fonts/Lora/Lora-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+body {
+  font-family: 'Montserrat', 'kansasnew', 'lora', 'lora-Italic';
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-primary;
+}
+
+h1,
+.h1 {
+  font-family: 'kansasnew', 'lora', 'lora-Italic';
+  font-size: 6.4rem;
+}
+
+h2,
+.h2 {
+  font-family: 'kansasnew', 'lora', 'lora-Italic';
+  font-size: 5.4rem;
+}
+
+h3,
+.h3 {
+  font-family: 'kansasnew', 'lora', 'lora-Italic';
+  font-size: 4.2rem;
+}
+
+h4,
+.h4 {
+  font-family: 'kansasnew', 'lora', 'lora-Italic';
+  font-size: 3.2rem;
+}
+
+h5,
+.h5 {
+  font-family: 'kansasnew', 'lora', 'lora-Italic';
+  font-size: 2.2rem;
+}
+
+h6,
+.h6 {
+  font-family: 'Montserrat', 'lora', 'lora-Italic';
+  font-size: 2.4rem;
+}
+
+p,
+.p {
+  font-family: 'Montserrat', 'lora', 'lora-Italic';
+  font-size: 1.6rem;
+}
+
+a,
+.a {
+  font-family: 'Montserrat', 'lora', 'lora-Italic';
+  font-size: 1.2rem;
+  opacity: 1;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+    color: $color-primary;
+  }
+}

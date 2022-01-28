@@ -1,0 +1,62 @@
+@import '@styles/main.scss';
+
+.mobile-navbar-container {
+  .navbar {
+    &-nav {
+      margin-top: 3.2rem;
+      height: calc(100vh - $header-height - 3.2rem - 50px);
+      justify-content: center;
+    }
+
+    &-link {
+      margin-top: 2rem;
+
+      &__input {
+        gap: 1.6rem;
+
+        input {
+          background: rgba(80, 52, 24, 0.12);
+          border-radius: 10px;
+          padding: 8px 15px 5px;
+          font-size: 1.4rem;
+          flex: 1;
+          outline: none;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    &-toggle {
+      border: none;
+      &:focus,
+      &:hover {
+        box-shadow: none;
+        border: none;
+      }
+      width: 4.2rem;
+    }
+
+    &-brand {
+      transition: all 0.2s;
+      margin: 0;
+    }
+  }
+}
+
+.navbar-myaccount {
+  margin-top: auto;
+  background: $color-primary;
+  color: $color-tertiary;
+  width: 100vw;
+  height: 50px;
+  font-family: 'kansasnew', 'lora', 'lora-Italic';
+  font-size: 1.8rem;
+
+  &:hover {
+    opacity: 1;
+    color: $color-tertiary;
+  }
+}

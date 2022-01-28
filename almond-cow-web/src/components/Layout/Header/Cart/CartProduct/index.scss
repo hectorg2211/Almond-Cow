@@ -1,0 +1,60 @@
+@import '@styles/main.scss';
+
+.cart-product {
+  width: 100%;
+
+  &-image {
+    width: 35%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  &-details {
+    line-height: 1;
+    gap: 10px;
+  }
+
+  &-details {
+    flex: 1;
+    padding: 20px;
+
+    .product {
+      &-name {
+        span {
+          @include h5;
+          font-size: 2rem;
+        }
+
+        svg {
+          width: 30px;
+          transform: scale(0.7);
+          cursor: pointer;
+        }
+      }
+
+      &-price {
+        @include h5;
+        font-size: 1.8rem;
+      }
+
+      &-quantity {
+        @include h5;
+        font-size: 20px;
+        gap: 10px;
+        background: $color-secondary;
+        padding: 8px 10px;
+        border-radius: 40rem;
+        width: 35%;
+
+        .quantity {
+          width: 35%;
+          text-align: center;
+        }
+      }
+
+      &-modifier {
+        cursor: pointer;
+      }
+    }
+  }
+}

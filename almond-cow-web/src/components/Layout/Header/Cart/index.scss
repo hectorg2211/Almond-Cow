@@ -1,0 +1,14 @@
+.cart-button {
+  border: none;
+  background: none;
+  box-shadow: none !important;
+
+  &:hover,
+  &:focus {
+    background: none;
+  }
+}
+
+.offcanvas {
+  padding: 1rem;
+}

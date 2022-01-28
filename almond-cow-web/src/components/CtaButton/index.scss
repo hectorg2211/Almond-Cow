@@ -1,0 +1,80 @@
+@import '@styles/main.scss';
+
+.cta {
+  display: block;
+  width: fit-content;
+  overflow: hidden;
+  border: none;
+  font-family: 'kansasnew', lora, lora-Italic;
+
+  &:focus {
+    box-shadow: none;
+  }
+  &-primary {
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none;
+    font-size: 2.2rem;
+    border-radius: 4rem;
+    padding: 12px 40px 12px 40px;
+    @include h5;
+  }
+  &-secondary {
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 4rem;
+    padding: 12px 40px 12px 40px;
+    box-shadow: none !important;
+    @include h5;
+  }
+  &-tertiary {
+    cursor: pointer;
+    background-color: transparent !important;
+    color: $color-primary !important;
+    text-decoration: underline;
+    font-size: 1.125em;
+  }
+}
+
+.cta {
+  &-cream {
+    background-color: $color-tertiary;
+    color: $color-primary;
+    &:hover,
+    &:focus {
+      background-color: $color-tertiary;
+      color: $color-primary;
+    }
+  }
+  &-light-cream {
+    background-color: $color-tertiary-light;
+    color: $color-primary;
+    &:hover,
+    &:focus {
+      background-color: $color-tertiary-light;
+      color: $color-primary;
+    }
+  }
+  &-brown {
+    background-color: $color-primary;
+    color: $color-tertiary-light;
+    &:hover,
+    &:focus {
+      background-color: $color-primary;
+      color: $color-tertiary-light;
+    }
+  }
+  &-light-blue {
+    background-color: $color-secondary;
+    color: $color-primary;
+    &:hover,
+    &:focus {
+      background-color: $color-secondary;
+      color: $color-primary;
+    }
+  }
+}

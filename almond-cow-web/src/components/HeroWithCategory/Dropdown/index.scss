@@ -1,0 +1,49 @@
+@import '@styles/main.scss';
+
+.dropdown {
+  background: $color-tertiary-light;
+  width: clamp(40%, 100px, 50%);
+  border-radius: 40rem;
+
+  &-toggle {
+    color: $color-primary;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: none !important;
+    border-radius: 40rem;
+    @include h4;
+
+    &::after {
+      display: none;
+    }
+
+    svg {
+      height: 30px;
+      width: auto;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &-menu {
+    width: 100%;
+    background: $color-tertiary-light;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+
+    a {
+      @include h4;
+      color: $color-primary;
+
+      &:hover {
+        color: $color-tertiary;
+        background: $color-primary;
+      }
+    }
+  }
+}

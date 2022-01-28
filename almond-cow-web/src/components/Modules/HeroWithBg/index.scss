@@ -1,0 +1,54 @@
+@import '@styles/main.scss';
+
+.hero-with-bg-module {
+  padding: 5rem 0;
+  gap: 10rem;
+  height: calc(100vh - $header-height);
+  @include respond(tab-port) {
+    height: auto;
+  }
+
+  @include respond(tab-port) {
+    gap: 2;
+    flex-direction: column-reverse;
+  }
+
+  @include respond(phone) {
+    gap: 0;
+  }
+
+  &-text {
+    .block-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include respond(tab-port) {
+        text-align: center;
+        align-items: center;
+      }
+    }
+
+    p {
+      font-size: 2.4rem;
+    }
+  }
+
+  &-image {
+    height: 100%;
+
+    @include respond(tab-port) {
+      display: flex;
+      height: 50%;
+    }
+
+    .gatsby-image-wrapper {
+      height: 100%;
+
+      @include respond(tab-port) {
+        align-self: flex-end;
+        height: 50vh;
+      }
+    }
+  }
+}
