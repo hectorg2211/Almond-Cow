@@ -13,7 +13,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
 
-        {/* Kansas new font */}
+        {/* KansasNew font */}
         <link
           rel='stylesheet'
           href='https://use.typekit.net/bvh5xki.css'></link>
